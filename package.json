@@ -1,20 +1,9 @@
 {
   "name": "teacher-workspace",
   "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
   "scripts": {
-    "dev": "turbo dev",
-    "build": "turbo build",
-    "lint": "turbo lint",
-    "db:migrate": "supabase db push",
-    "db:reset": "supabase db reset",
-    "db:seed": "supabase db seed"
-  },
-  "devDependencies": {
-    "turbo": "^2.0.0"
-  },
-  "packageManager": "npm@10.0.0"
+    "dev": "cd apps/web && npm run dev",
+    "build": "cd apps/web && npm run build",
+    "start": "cd apps/web && npm start"
+  }
 }

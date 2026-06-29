@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter, useParams } from "next/navigation";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
-import { MAX_FILE_SIZE, ALLOWED_FILE_TYPES } from "@teacher-workspace/shared";
+import { MAX_FILE_SIZE, ALLOWED_FILE_TYPES } from "@/lib/shared/constants";
 
 export default function NewResourcePage() {
   const router = useRouter();
